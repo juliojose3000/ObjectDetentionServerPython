@@ -83,8 +83,6 @@ while True:
         for value in response['Labels']:
             print(str(value['Name']) + "      " + str(value['Confidence']))
 
-        print("\n---------------------------------------")
-
     elif option == FACIAL_ANALYSIS:
 
         response = client.detect_faces(Image={'Bytes': source_bytes}, Attributes=['ALL'])
